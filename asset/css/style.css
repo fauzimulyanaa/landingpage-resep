@@ -1,0 +1,344 @@
+/* global  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #2e266f;
+}
+
+ul {
+  list-style: none;
+}
+
+/* end global */
+
+/* navbar start */
+.navbar {
+  padding: 47px 110px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 94px;
+}
+
+.navbar ul li a:hover {
+  border-bottom: 1px solid #111;
+}
+
+/* navbar end */
+
+/* hero start */
+
+.hero-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.hero-container h1 {
+  margin-bottom: 20px;
+  color: #2e266f;
+  font-size: 42px;
+}
+
+.wrapper img {
+  width: 40%;
+}
+
+/* hero end */
+
+/* ingredient start */
+.ingredients {
+  margin-top: 100px;
+  padding-left: 300px;
+}
+
+.ingredients h2 {
+  margin-bottom: 20px;
+}
+
+.ingredients ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* ingredients end */
+
+/* videostep start */
+.video-step {
+  margin-top: 50px;
+  padding-left: 300px;
+}
+
+.video-play {
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  background-color: #efc81a;
+  position: relative;
+  border-radius: 10px;
+}
+
+.video-play img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* videostep end */
+
+/* textarea start */
+
+.textarea {
+  text-align: center;
+  margin-right: 30px;
+  margin-top: 40px;
+}
+
+textarea {
+  padding: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 200px;
+  padding: 10px 20px;
+  background-color: #efc81a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+/* textare end */
+
+/* comment start */
+
+.comment {
+  margin-top: 50px;
+  padding-left: 300px;
+}
+
+.comment-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.comment-container img {
+  width: 50px;
+}
+
+.desc .name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+/* comment end */
+
+/* footer start */
+
+.footer-container {
+  background-color: #efc81a;
+  margin-top: 100px;
+  padding: 40px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.footer h1 {
+  font-size: 52px;
+  font-weight: 400;
+  color: #2e266f;
+  margin-bottom: 21px;
+}
+
+.footer p {
+  font-size: 20px;
+  color: #707070;
+}
+
+.nav-list {
+  margin-top: 70px;
+}
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.nav-list ul li a {
+  color: #707070;
+  font-size: 16px;
+}
+
+.nav-list ul .copyright {
+  position: absolute;
+  left: 1000px;
+}
+
+/* footer end */
+
+/* css breakpoint */
+
+@media (max-width: 576px) {
+  a {
+    color: #fff;
+    font-size: 17px;
+  }
+  .navbar {
+    background-color: #efc81a;
+    padding: 30px 30px;
+  }
+
+  .navbar ul {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .hero-container {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-container h1 {
+    font-size: 36px;
+  }
+
+  .wrapper img {
+    width: 100%;
+  }
+
+  .ingredients {
+    margin-top: 30px;
+    padding: 0 30px;
+  }
+
+  .ingredients h2 {
+    font-size: 30px;
+  }
+
+  .ingredients ul li {
+    font-size: 20px;
+  }
+
+  .video-step {
+    margin-top: 30px;
+    padding: 0 30px;
+  }
+
+  .video-step h2 {
+    font-size: 30px;
+  }
+
+  textarea {
+    width: 80%;
+    height: 100px;
+    margin-left: 10px;
+    border: 1px solid #111;
+  }
+
+  .comment {
+    margin-top: 60px;
+    padding: 0 30px;
+  }
+
+  .comment h2 {
+    font-size: 30px;
+  }
+
+  .footer h1 {
+    font-size: 30px;
+  }
+
+  .footer p {
+    font-size: 15px;
+  }
+
+  .nav-list ul {
+    flex-wrap: wrap;
+  }
+
+  .nav-list ul .copyright {
+    position: static;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  a {
+    color: #fff;
+    font-size: 20px;
+  }
+  .navbar {
+    background-color: #efc81a;
+    padding: 30px 30px;
+  }
+
+  .navbar ul {
+    justify-content: center;
+  }
+
+  .hero-container {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .wrapper img {
+    width: 70%;
+  }
+
+  .ingredients {
+    margin-top: 30px;
+    padding: 0 60px;
+  }
+
+  .ingredients h2 {
+    font-size: 35px;
+  }
+
+  .ingredients ul li {
+    font-size: 23px;
+  }
+
+  .video-step {
+    margin-top: 30px;
+    padding: 0 60px;
+  }
+
+  .video-step h2 {
+    font-size: 35px;
+  }
+
+  textarea {
+    width: 80%;
+    margin-left: 10px;
+    border: 1px solid #111;
+  }
+
+  .comment {
+    margin-top: 60px;
+    padding: 0 60px;
+  }
+
+  .comment h2 {
+    font-size: 35px;
+  }
+}
